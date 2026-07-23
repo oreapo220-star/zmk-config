@@ -56,11 +56,18 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        pass1_macro: pass1_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A &kp K &kp U &kp M &kp I &kp M &kp O &kp G &kp U>;
+            label = "PASS1_MACRO";
+        };
+
+        pass2_macro: pass2_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp A &kp K &kp U &kp M &kp I &kp M &kp O &kp G &kp U &kp NUMBER_2 &kp NUMBER_2 &kp N0>;
+            label = "PASS2_MACRO";
         };
     };
 
