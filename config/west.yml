@@ -12,5 +12,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
+    - name: zmk-config-roBa
+      remote: kumamuk-git
+      revision: main
   self:
     path: config
