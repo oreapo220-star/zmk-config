@@ -21,6 +21,10 @@ include:
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
+   # COROPIT (25mm トラックボール) 対応
+   # shield 側の roBa_R.conf は config/ より後にマージされるため、
+   # 同じ項目の上書きは cmake-args で行う必要がある
+   cmake-args: -DCONFIG_PMW3610_ORIENTATION_0=y
  - board: seeeduino_xiao_ble
    shield: roBa_L
  - board: seeeduino_xiao_ble
